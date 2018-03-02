@@ -1,0 +1,38 @@
+1. using coverage.py,
+	It'is a tool for meauring code coverage of Python programs.
+	Tells which parts of the code were executed, as well as identifing the codes that were not being excuted.
+
+2. steps:
+	sudo pip install coverage
+	coverage run test_rpn.py
+	coverage report -m
+
+3. reports:
+Name          Stmts   Miss  Cover   Missing
+-------------------------------------------
+rpn.py           20      3    85%   27-28, 31
+test_rpn.py      11      0   100%
+-------------------------------------------
+TOTAL            31      3    90%
+
+
+Name          Stmts   Miss  Cover   Missing
+-------------------------------------------
+rpn.py           22      4    82%   15, 29-30, 33
+test_rpn.py      11      0   100%
+-------------------------------------------
+TOTAL            33      4    88%
+
+
+
+
+
+
+1. added logging feature that records debugging messages upon request
+   added color theme for printing user inputs and ouput
+
+2. used ANSI escape sequences to print text in color
+	inputs CYAN + RED operator
+        ouputs RED for neg, YELLOW for POS
+   used logging library for keeping the logs
+   used sys to get command line arguments  
