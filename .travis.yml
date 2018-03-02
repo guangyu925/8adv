@@ -6,3 +6,4 @@ install:
   - pip install logging 
 script:
   - make
+sudo: enabled
